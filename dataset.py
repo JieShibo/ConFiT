@@ -75,7 +75,7 @@ def get_caltech(resnet):
     labels = np.array(labels)
     lb = LabelEncoder()
     labels = lb.fit_transform(labels)
-    x_train, x_test, y_train, y_test = train_test_split(data, labels, stratify=labels, test_size=0.2, random_state=seed)
+    x_train, x_test, y_train, y_test = train_test_split(data, labels, stratify=labels, test_size=0.2, random_state=0)
     train_set = CustomDataset(x_train, y_train, transform)
     test_set = CustomDataset(x_test, y_test, transform)
     split = nc_benchmark(
@@ -115,7 +115,7 @@ def get_flowers(resnet):
 
     data = np.array(data)
     labels = np.array(labels) - 1
-    x_train, x_test, y_train, y_test = train_test_split(data, labels, stratify=labels, test_size=0.2, random_state=seed)
+    x_train, x_test, y_train, y_test = train_test_split(data, labels, stratify=labels, test_size=0.2, random_state=0)
 
     train_set = CustomDataset(x_train, y_train, transform)
     test_set = CustomDataset(x_test, y_test, transform)
