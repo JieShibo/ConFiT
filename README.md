@@ -1,6 +1,6 @@
 # ConFiT
 Source code of "Alleviating Representational Shift for Continual Fine-tuning" (CVPR-W 2022)
-### Enviroment
+### Requirements
 + Python 3.9.1
 + PyTorch 1.10.0
 + TorchVision 0.11.1
