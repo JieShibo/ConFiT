@@ -6,7 +6,7 @@ Source code of "Alleviating Representational Shift for Continual Fine-tuning" (C
 + TorchVision 0.11.1
 + [Timm](https://rwightman.github.io/pytorch-image-models/) 0.4.12
 + [Avalanche](https://avalanche.continualai.org/) 0.0.1 
-### Run
+### Usage
 ```sh 
 # CIFAR100
 python main.py --dataset cifar --max_epoch 10 --batch_size 128
